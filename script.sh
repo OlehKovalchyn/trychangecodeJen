@@ -1,1 +1,3 @@
-echo Hello Jenkins
+AZ_LOGIN=${AZ_LOGIN:-"example@dot.com"}
+AZ_PASSW=${AZ_PASSW:-""}
+AZ_SUBSCRIPTION_NAME=${AZ_SUBSCRIPTION_NAME:-""}
