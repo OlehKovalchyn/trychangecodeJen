@@ -1,6 +1,6 @@
 AZ_LOGIN="Oleh"
 AZ_PASSW="Kovalchyn"
-AZ_SUBSCRIPTION_NAME="Fuflo"
+AZ_SUBSCRIPTION_NAME="blablabla"
 echo $AZ_LOGIN
 echo $AZ_PASSW
 echo $AZ_SUBSCRIPTION_NAME
