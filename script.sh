@@ -29,11 +29,39 @@ AzureServicePrincipalResult="AzureServicePrincipalResult"
 azurerm_resource_group_value=${azurerm_resource_group_value:-""}
 azure_rg_location_value=${azure_rg_location_value:-""} # Resource region details for (US) : eastus, eastus2, westus, westus2, centralus, northcentralus, southcentralus
 
+#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
+# =======================================================================================================
+# Azure container registry name where to control private docker registry
+# =======================================================================================================
+azure_container_registry_name_value=${azure_container_registry_name_value:-""}
+# ^ alpha numeric characters only are allowed in "name"
+
+# =======================================================================================================
+# */TODO/* Environments
+# =======================================================================================================
+# env_dev_name_value="dev"
+# env_test_name_value="test"
+# env_stage_name_value="stage"
+# env_prod_name_value="prod"
+environment_name_value=${environment_name_value:-""} # actual variable
+# ^ It can only be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen.
+
+#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+
+
+
+#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 echo ${AZ_LOGIN}
 echo ${AZ_PASSW}
 echo ${AZ_SUBSCRIPTION_NAME}
-echo ${AzureQueryResult}
 echo ${azurerm_resource_group_value}
 echo ${azure_rg_location_value}
+echo ${azure_container_registry_name_value}
+echo ${environment_name_value}
+#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+
+
 
