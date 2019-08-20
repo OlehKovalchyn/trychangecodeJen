@@ -48,6 +48,14 @@ environment_name_value=${environment_name_value:-""} # actual variable
 # ^ It can only be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen.
 
 #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+# =======================================================================================================
+# PostgreSQL server information
+# =======================================================================================================
+postgresql_server_name_value=${postgresql_server_name_value:-""}
+# ^ It can only be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen. The hyphen may not lead or trail in the name.
+postgresql_server_version_value=${postgresql_server_version_value:-""}
+database_admin_user_value=${database_admin_user_value:-""}
+database_admin_password_value=${database_admin_password_value:-""}
 
 
 
@@ -60,6 +68,11 @@ echo ${azurerm_resource_group_value}
 echo ${azure_rg_location_value}
 echo ${azure_container_registry_name_value}
 echo ${environment_name_value}
+echo ${postgresql_server_name_value}
+echo ${postgresql_server_version_value}
+echo ${database_admin_user_value}
+echo ${database_admin_password_value}
+
 #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 
