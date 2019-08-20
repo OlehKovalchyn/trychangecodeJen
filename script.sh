@@ -106,6 +106,29 @@ storage_account_name_value=${storage_account_name_value:-""}
 # tenant_id_value= automatic from script
 
 
+# =======================================================================================================
+# DNS names information for services
+# =======================================================================================================
+DNS_ingress=${DNS_ingress:-""}
+DNS_dip_dc=${DNS_dip_dc:-""}
+# ^ Each DNS name must be in order with each ip in getServicesExternalIps() function
+# IParray=($external_ip_ingress $external_ip_dip_dc $external_ip_spa_web);
+# ^ DNS names for services. Domain_name_label must contain only lowercase alphanumeric characters, numbers and hyphens. It must start with a letter and end only with a number or letter
+
+# =======================================================================================================
+# Required variables for commonconfigs.yaml
+# =======================================================================================================
+# SFTP information
+# =======================================================================================================
+# DeployLocalSFTP="true"
+# If true will be deployed in kuberenetes and saved in commonconfigs.yaml & commonsecrets.yaml,
+# otherwise will be only saved in configs
+deployLocalSFTP=${deployLocalSFTP:-"false"}
+sftp_Host=${sftp_Host:-""}
+# sftp_Port="22" # by default
+sftp_Path=${sftp_Path:-""}
+sftp_User=${sftp_User:-""}
+sftp_Password=${sftp_Password:-""}
 
 
 #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -131,3 +154,10 @@ echo ${kubernetes_os_type_value}
 echo ${kubernetes_version_value}
 echo ${kubernetes_vm_size_value}
 echo ${storage_account_name_value}
+echo ${DNS_ingress}
+echo ${DNS_dip_dc}
+echo ${deployLocalSFTP}
+echo ${sftp_Host}
+echo ${sftp_Path}
+echo ${sftp_User}
+echo ${sftp_Password}
