@@ -29,7 +29,6 @@ AzureServicePrincipalResult="AzureServicePrincipalResult"
 azurerm_resource_group_value=${azurerm_resource_group_value:-""}
 azure_rg_location_value=${azure_rg_location_value:-""} # Resource region details for (US) : eastus, eastus2, westus, westus2, centralus, northcentralus, southcentralus
 
-#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 # =======================================================================================================
 # Azure container registry name where to control private docker registry
@@ -129,6 +128,8 @@ sftp_Host=${sftp_Host:-""}
 sftp_Path=${sftp_Path:-""}
 sftp_User=${sftp_User:-""}
 sftp_Password=${sftp_Password:-""}
+
+#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
 
 #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
