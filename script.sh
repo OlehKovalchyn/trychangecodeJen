@@ -47,7 +47,6 @@ azure_container_registry_name_value=${azure_container_registry_name_value:-""}
 environment_name_value=${environment_name_value:-""} # actual variable
 # ^ It can only be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen.
 
-#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 # =======================================================================================================
 # PostgreSQL server information
 # =======================================================================================================
@@ -56,6 +55,32 @@ postgresql_server_name_value=${postgresql_server_name_value:-""}
 postgresql_server_version_value=${postgresql_server_version_value:-""}
 database_admin_user_value=${database_admin_user_value:-""}
 database_admin_password_value=${database_admin_password_value:-""}
+
+#*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+# =======================================================================================================
+# PostgreSQL databases information
+# =======================================================================================================
+# Databases ConnectionStrings for commonSecrets.yaml in Base64 - automatic from script
+# AnalyticsValue= # automatic from script
+# DevicesValue= # automatic from script
+# FedExIntegrationValue= # automatic from script
+# MobileDevicesValue= # automatic from script
+# ParcelsValue= # automatic from script
+# StationsValue= # automatic from script
+# UsersValue= # automatic from script
+# VansValue= # automatic from script
+
+# =======================================================================================================
+# Azure services
+# =======================================================================================================
+# BlobStorage_ConnectionString= # automatic from script
+# ServiceBus_ConnectionString= # automatic from script
+
+# =======================================================================================================
+# Custom services
+# =======================================================================================================
+FirebaseServerKeyValue=${FirebaseServerKeyValue:-""}
+#VaultTokenValue=
 
 
 
@@ -72,6 +97,7 @@ echo ${postgresql_server_name_value}
 echo ${postgresql_server_version_value}
 echo ${database_admin_user_value}
 echo ${database_admin_password_value}
+echo ${FirebaseServerKeyValue}
 
 #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
