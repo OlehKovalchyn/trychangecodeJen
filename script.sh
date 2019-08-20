@@ -203,7 +203,6 @@ echo ${beacon_Host}
 echo ${beacon_Key}
 echo ${beacon_Password}
 echo ${beacon_DeviceID}
-echo ${}
 
 echo ${extractLogJob_RunEveryHours}
 echo ${extractLogJob_RunEveryMinutes}
