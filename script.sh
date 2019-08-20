@@ -163,32 +163,32 @@ registryCredential=(${registryCredentialEnv:-$registryCredentialEnv}) # Array ex
 
 
 #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
-echo ${AZ_LOGIN}
-echo ${AZ_PASSW}
-echo ${AZ_SUBSCRIPTION_NAME}
-echo ${azurerm_resource_group_value}
-echo ${azure_rg_location_value}
-echo ${azure_container_registry_name_value}
-echo ${environment_name_value}
-echo ${postgresql_server_name_value}
-echo ${postgresql_server_version_value}
-echo ${database_admin_user_value}
-echo ${database_admin_password_value}
-echo ${FirebaseServerKeyValue}
+# echo ${AZ_LOGIN}
+# echo ${AZ_PASSW}
+# echo ${AZ_SUBSCRIPTION_NAME}
+# echo ${azurerm_resource_group_value}
+# echo ${azure_rg_location_value}
+# echo ${azure_container_registry_name_value}
+# echo ${environment_name_value}
+# echo ${postgresql_server_name_value}
+# echo ${postgresql_server_version_value}
+# echo ${database_admin_user_value}
+# echo ${database_admin_password_value}
+# echo ${FirebaseServerKeyValue}
 
 #*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
-echo ${kubernetes_resource_group_value}
-echo ${kubernetes_cluster_name_value}
-echo ${kubernetes_node_count_value}
-echo ${kubernetes_os_type_value}
-echo ${kubernetes_version_value}
-echo ${kubernetes_vm_size_value}
-echo ${storage_account_name_value}
-echo ${DNS_ingress}
-echo ${DNS_dip_dc}
-echo ${deployLocalSFTP}
-echo ${sftp_Host}
-echo ${sftp_Path}
-echo ${sftp_User}
-echo ${sftp_Password}
+#echo ${kubernetes_resource_group_value}
+#echo ${kubernetes_cluster_name_value}
+#echo ${kubernetes_node_count_value}
+#echo ${kubernetes_os_type_value}
+#echo ${kubernetes_version_value}
+# echo ${kubernetes_vm_size_value}
+# echo ${storage_account_name_value}
+# echo ${DNS_ingress}
+# echo ${DNS_dip_dc}
+# echo ${deployLocalSFTP}
+# echo ${sftp_Host}
+# echo ${sftp_Path}
+# echo ${sftp_User}
+# echo ${sftp_Password}
