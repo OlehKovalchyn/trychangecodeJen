@@ -1,1 +1,2 @@
-
+CAR=${CAR:-""}
+TYPE="BIG CAR"
