@@ -1,2 +1,2 @@
 CAR=${CAR:-""}
-TYPE=${TYPE:-"Bolid"}
+TYPE="Bolid"
