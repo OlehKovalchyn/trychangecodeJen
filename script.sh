@@ -1,4 +1,4 @@
 CAR=${CAR:-""}
-TYPE="Bolid"
+TYPE=${TYPE:-"Bolid"}
 echo ${CAR}
 echo ${TYPE}
